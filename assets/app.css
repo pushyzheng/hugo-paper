@@ -12,7 +12,7 @@
   --gap: 3.5rem;
   --y-gap: 8rem;
   --wide: 140rem;
-  --narrow: 80rem;
+  --narrow: 90rem;
   --side: calc((var(--wide) - var(--narrow)) / 2);
   --header: 8rem;
   --footer: calc(8rem + var(--safe-bottom));
@@ -73,7 +73,7 @@ body {
   padding-left: var(--gap);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+  'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
   line-height: 1.8;
   color: var(--pro);
@@ -302,10 +302,22 @@ img {
 
 /* Post entry
  -------------------------------------------------- */
+#post-entry-list {
+  padding: 0 8rem;
+}
+
 .post-entry {
   position: relative;
-  padding-block: 2rem;
+  padding-block: 0.6rem;
   transition: transform 0.1s;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-entry-title {
+  font-size: 2.1rem;
+  font-weight: 400;
 }
 
 .post-entry:first-of-type {
@@ -433,7 +445,7 @@ img {
 /* Post content
  -------------------------------------------------- */
 .post-content {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
 
 .post-content h1,
@@ -478,7 +490,7 @@ img {
 .post-content a {
   padding-bottom: 0.2rem;
   font-weight: 500;
-  border-bottom: 2px solid var(--pro);
+  border-bottom: 5px solid #EDC5C6;
 }
 
 .post-content a code {
@@ -560,7 +572,7 @@ img {
 .post-content pre {
   margin: 0 calc(var(--gap) * -1) 4rem;
   overflow-x: auto;
-  background: var(--hljs-bg) !important;
+  background: #282C34 !important;
   border-radius: 0.5rem;
 }
 
@@ -620,9 +632,19 @@ img {
 }
 
 .post-content blockquote {
-  padding: 0 0 0 calc(var(--gap) - 0.4rem);
   margin: 0 0 0 calc(var(--gap) * -1);
   border-left: 0.4rem solid var(--pro);
+
+  margin-left: 0 !important;
+  margin-bottom: 2px;
+  border-left: 3px solid #9E9E9E;
+  padding: 10px 15px;
+  color: #777;
+  background-color: #EEEEEE;
+}
+
+.post-content blockquote p {
+  margin-bottom: 1rem;
 }
 
 .post-content hr {
@@ -660,6 +682,28 @@ img {
 .footer a:hover {
   color: var(--pro);
   border-bottom: 1px solid var(--pro);
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto
+}
+
+#avatar {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  margin-bottom: calc(var(--y-gap) + 1rem);
+}
+
+.avatar {
+  background-image: url(https://pushyzheng.com/images/avatar.png);
+  cursor: pointer;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 9999px;
+  width: 15rem;
+  height: 15rem;
 }
 
 /* 404

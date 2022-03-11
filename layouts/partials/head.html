@@ -22,9 +22,10 @@
   <!---->
   {{ $css := slice $app_css $custom_css | resources.Concat "app.css" | minify }}
   <link rel="preload stylesheet" as="style" href="{{ $css.Permalink }}" />
+  <link rel="preload stylesheet" as="style" href="{{ `animate.min.css` | absURL }}" />
 
   {{ if and .IsPage (not site.Params.disableHLJS) }}
-  <link rel="preload stylesheet" as="style" href="{{ `an-old-hope.min.css` | absURL }}" />
+  <link rel="preload stylesheet" as="style" href="{{ `atom-one-dark.min.css` | absURL }}" />
   <script
     defer
     src="{{ `highlight.min.js` | absURL }}"
