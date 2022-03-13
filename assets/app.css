@@ -302,9 +302,6 @@ img {
 
 /* Post entry
  -------------------------------------------------- */
-#post-entry-list {
-  padding: 0 8rem;
-}
 
 .post-entry {
   position: relative;
@@ -490,7 +487,7 @@ img {
 .post-content a {
   padding-bottom: 0.2rem;
   font-weight: 500;
-  border-bottom: 5px solid #EDC5C6;
+  border-bottom: 2px solid var(--pro);
 }
 
 .post-content a code {
@@ -632,15 +629,9 @@ img {
 }
 
 .post-content blockquote {
+  padding: 0 0 0 calc(var(--gap) - 0.4rem);
   margin: 0 0 0 calc(var(--gap) * -1);
   border-left: 0.4rem solid var(--pro);
-
-  margin-left: 0 !important;
-  margin-bottom: 2px;
-  border-left: 3px solid #9E9E9E;
-  padding: 10px 15px;
-  color: #777;
-  background-color: #EEEEEE;
 }
 
 .post-content blockquote p {
@@ -682,28 +673,6 @@ img {
 .footer a:hover {
   color: var(--pro);
   border-bottom: 1px solid var(--pro);
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto
-}
-
-#avatar {
-  padding-top: 4rem;
-  padding-bottom: 1rem;
-  margin: 0 auto;
-  margin-bottom: calc(var(--y-gap) + 1rem);
-}
-
-.avatar {
-  background-image: url(https://pushyzheng.com/images/avatar.png);
-  cursor: pointer;
-  background-size: cover;
-  background-position: 50%;
-  border-radius: 9999px;
-  width: 15rem;
-  height: 15rem;
 }
 
 /* 404

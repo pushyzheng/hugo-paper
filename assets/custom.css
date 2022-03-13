@@ -1,1 +1,29 @@
 /* Place custom css here. */
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto
+}
+
+#avatar {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  margin-bottom: calc(var(--y-gap) + 1rem);
+}
+
+.avatar {
+  background-image: url(https://pushyzheng.com/images/avatar.png);
+  cursor: pointer;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 9999px;
+  width: 15rem;
+  height: 15rem;
+}
+
+@media screen and (min-width: 770px) {
+  #post-entry-list {
+    padding: 0 8rem;
+  }
+}

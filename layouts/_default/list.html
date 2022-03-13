@@ -20,7 +20,7 @@
   {{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages }}
   <article class="post-entry">
     <div class="post-entry-title">{{ .Title }}</div>
-    <time>{{ .Date | time.Format ":date_short" }}</time>
+    <time>{{ .Date | time.Format ":date_medium" }}</time>
     <a href="{{ .Permalink }}"></a>
   </article>
   {{ end }}

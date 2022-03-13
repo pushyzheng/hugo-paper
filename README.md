@@ -21,9 +21,8 @@ Hugo themes: [themes.gohugo.io/hugo-paper](https://themes.gohugo.io/hugo-paper/)
 
 ## Overview
 
-![](https://raw.githubusercontent.com/nanxiaobei/hugo-paper/master/images/screenshot.png)
-![](https://raw.githubusercontent.com/nanxiaobei/hugo-paper/master/images/screenshot_dark.png)
-![](https://raw.githubusercontent.com/nanxiaobei/hugo-paper/master/images/screenshot_mobile.png)
+![](./images/screenshot.png)
+![](./images/screenshot_dark.png)
 
 ## Install
 
