@@ -28,6 +28,30 @@ strong {
   height: 15rem;
 }
 
+.post-content a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid #CBF8DF;
+  box-shadow: inset 0 -4px 0 #cbf8df;
+  background: transparent;
+  transition: background 150ms ease;
+}
+
+.post-content a:hover {
+  background: #CBF8DF;
+}
+
+#tag-cloud-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#tag-cloud a {
+  margin: 1rem;
+}
+
 @media screen and (min-width: 770px) {
   #post-entry-list {
     padding: 0 8rem;

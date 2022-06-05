@@ -486,11 +486,11 @@ img {
   margin-inline: auto;
 }
 
-.post-content a {
-  padding-bottom: 0.2rem;
-  font-weight: 500;
-  border-bottom: 2px solid var(--pro);
-}
+/*.post-content a {*/
+/*  padding-bottom: 0.2rem;*/
+/*  font-weight: 500;*/
+/*  border-bottom: 2px solid var(--pro);*/
+/*}*/
 
 .post-content a code {
   margin-inline: 0;
@@ -569,7 +569,7 @@ img {
 
 .post-content .highlight,
 .post-content pre {
-  margin: 0 calc(var(--gap) * -1) 4rem;
+  margin: 0 0 4rem;
   overflow-x: auto;
   background: #282C34 !important;
   border-radius: 0.5rem;
@@ -633,11 +633,12 @@ img {
 .post-content blockquote {
   padding: 0 0 0 calc(var(--gap) - 0.4rem);
   margin: 0 0 0 calc(var(--gap) * -1);
-  border-left: 0.4rem solid var(--pro);
+  border-left: 0.4rem solid #BBBFC3;
+  color: rgba(31, 35, 41, 0.7);
 }
 
 .post-content blockquote p {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .post-content hr {
