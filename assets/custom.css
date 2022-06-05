@@ -1,4 +1,10 @@
 /* Place custom css here. */
+strong {
+  background-color: #FACC5A;
+  padding: 1.5px;
+  font-weight: normal;
+  color: black !important;
+}
 
 .mx-auto {
   margin-left: auto;
@@ -13,7 +19,7 @@
 }
 
 .avatar {
-  background-image: url(https://pushyzheng.com/images/avatar.png);
+  background-image: url(http://static.pushyzheng.com/images20220521190701.png);
   cursor: pointer;
   background-size: cover;
   background-position: 50%;
@@ -25,5 +31,15 @@
 @media screen and (min-width: 770px) {
   #post-entry-list {
     padding: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .post-entry-title {
+    font-size: 2.5rem !important;
+  }
+
+  .post-content {
+    font-size: 2.5rem;
   }
 }

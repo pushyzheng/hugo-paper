@@ -118,7 +118,6 @@ p {
   margin: 0;
 }
 
-strong,
 b {
   font-weight: 500;
 }
@@ -315,6 +314,9 @@ img {
 .post-entry-title {
   font-size: 2.1rem;
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .post-entry:first-of-type {
@@ -656,6 +658,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   max-width: var(--narrow);
   height: var(--footer);
   padding-bottom: var(--safe-bottom);
@@ -673,6 +676,10 @@ img {
 .footer a:hover {
   color: var(--pro);
   border-bottom: 1px solid var(--pro);
+}
+
+.footer .footer-row {
+  display: flex;
 }
 
 /* 404
