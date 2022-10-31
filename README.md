@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Paper <sup><sup><sub>5.1</sub></sup></sup></h1>
 
-Demo → [hugo-paper.vercel.app](https://hugo-paper.vercel.app/)
+Demo → [pushyzheng.com](https://pushyzheng.com/)
 
 <hr />
 
@@ -45,13 +45,29 @@ For more information, please read the [official guide](https://gohugo.io/getting
 Available options to `config.toml`:
 
 ```toml
-disqusShortname = 'YOUR_DISQUS_SHORTNAME'   # add disqus comments
-
 [params]
   disableHLJS = true                         # don't use highlight.js
   twitter = 'YOUR_TWITTER_ID'                # twitter.com/YOUR_TWITTER_ID
   github = 'YOUR_GITHUB_ID'                  # github.com/YOUR_GITHUB_ID
   instagram = 'YOUR_INSTAGRAM_ID'            # instagram.com/YOUR_INSTAGRAM_ID
+```
+
+giscus, for example: 
+
+```toml
+[params]
+  giscus-repo = pushyzheng/blog
+  giscus-repo-id = R_kgDOIVqytA
+  giscus-mapping = url
+```
+
+add 'comment = true' in metadata:
+
+```yaml
+---
+title: ...
+comment: true
+---
 ```
 
 ## License
