@@ -52,6 +52,14 @@ strong {
   margin: 1rem;
 }
 
+ul li {
+  list-style-type: initial !important;
+}
+
+ol ul {
+  margin-bottom: 0rem !important;
+}
+
 @media screen and (min-width: 770px) {
   #post-entry-list {
     padding: 0 8rem;

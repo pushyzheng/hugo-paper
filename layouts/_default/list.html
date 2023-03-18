@@ -17,25 +17,33 @@
 
 <!-- Articles -->
 <div id="post-entry-list">
-  {{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages }}
-  <article class="post-entry">
-    <div class="post-entry-title">{{ .Title }}</div>
-    <time>{{ .Date | time.Format ":date_medium" }}</time>
-    <a href="{{ .Permalink }}"></a>
-  </article>
+  {{ $paginator := .Paginate $pages }} 
+  
+  {{ range $index, $page := $paginator.Pages }}
+    <!-- Hide the article if the attribute "hide" has been set. -->
+    {{ if eq .Params.hide nil }}
+        <article class="post-entry">
+          <!-- Title in the left -->
+          <div class="post-entry-title">{{ .Title }}</div>
+          <!-- datetime in the right -->
+          <time>{{ .Date | time.Format ":date_medium" }}</time>
+          <a href="{{ .Permalink }}"></a>
+        </article>
+    {{ end }}
   {{ end }}
 </div>
 
 <!-- Main Nav -->
 {{ if gt $paginator.TotalPages 1 }}
-<nav class="main-nav">
-  {{ if $paginator.HasPrev }}
-  <a class="prev" href="{{ $paginator.Prev.URL }}">← {{ i18n "prev_page" }}</a>
-  {{ end }}<!---->
-  {{ if $paginator.HasNext }}
-  <a class="next" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" }} →</a>
-  {{ end }}
-</nav>
+  <nav class="main-nav">
+    {{ if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL }}">← {{ i18n "prev_page" }}</a>
+    {{ end }}<!---->
+    
+    {{ if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" }} →</a>
+    {{ end }}
+  </nav>
 {{ end }}<!---->
 
 {{ end }}

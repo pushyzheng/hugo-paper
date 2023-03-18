@@ -12,6 +12,14 @@
     </p>
     <h1>{{ .Title }}</h1>
   </header>
+
+  <!-- Show avatar only in about-me page -->
+  {{ if eq .URL "/about/" }}
+    <div style="margin-bottom: 7rem;">
+        <div class="avatar mx-auto"></div>
+    </div>
+  {{ end }}
+
   <section class="post-content">{{ .Content }}</section>
 
   <!-- Post Tags -->
